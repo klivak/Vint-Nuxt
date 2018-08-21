@@ -1,0 +1,102 @@
+.section
+  &_white
+    background: #ffffff
+  &_darkgray
+    background: #292929
+  &_green
+    background: #3db565
+
+  &-title
+    margin-bottom: 3rem
+    .title
+      color: $gray3
+      font-size: 34px
+      font-weight: 300
+      //line-height: 48px
+      line-height: 1.41
+      & span
+        font-size: 34px
+        font-weight: 300
+        color: #3db565
+      &_white
+        color: $white
+
+
+  &-description
+    display: flex
+    flex-wrap: wrap
+
+  .description
+    font-family: "Suisse Intl", sans-serif
+    font-size: 15px
+    font-weight: 300
+    line-height: 28px
+
+    &-column
+      flex: 0 0 100%
+
+    &-column_half
+      flex: 0 0 50%
+      @media (max-width: 50rem)
+        flex: 0 0 100%
+
+    &-item
+      color: $gray1
+      font-size: 1.5rem
+      font-weight: 300
+      line-height: 2.8rem
+      font-style: normal
+      padding-right: 1rem
+
+      &__link
+        font-weight: 600
+
+        &_big
+          font-weight: 300
+          font-size: 26px
+          line-height: 36px
+          display: block
+          @media (max-width: 50rem)
+            margin-bottom: 2rem
+
+
+  .section-tabs
+    .tab
+      overflow: hidden
+      margin-bottom: 5rem
+
+    .tab button
+      float: left
+      border: none
+      outline: none
+      cursor: pointer
+      background: transparent
+      color: #ffffff
+      font-weight: 600
+      font-size: 11px
+      line-height: 11px
+      text-transform: uppercase
+      padding-right: 20px
+      transition: 0.3s
+
+    .tab button:hover,
+    .tab button.active
+      color: #3db565
+
+    .tabcontent
+      color: #fff
+      //display: none
+
+      &__title
+        font-size: 26px
+        font-weight: 300
+        line-height: 26px
+        letter-spacing: 1.18px
+        margin-bottom: 35px
+
+      &__description
+        display: block
+        font-size: 11px
+        font-weight: 400
+        line-height: 20px
+

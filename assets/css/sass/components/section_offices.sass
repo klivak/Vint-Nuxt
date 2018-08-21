@@ -1,0 +1,33 @@
+.section_offices
+
+  .column_offices
+    min-height: 50rem
+    @media (max-width: 767px)
+      min-height: auto
+
+  .vue-map-container
+    position: absolute
+    height: 100%
+    width: calc(100% + 6rem)
+    @media (max-width: 767px)
+      min-height: 30rem
+      position: relative
+      width: 100%
+
+  .vue-map > div:first-child
+    background: #212121 !important
+
+  .gm-style a img,
+  .gmnoprint,
+  .gmnoprint.gm-style-cc,
+  .gm-style-cc
+    display: none
+
+  .tabcontent
+    animation: fadeEffect 1s
+
+@keyframes fadeEffect
+  from
+    opacity: 0
+  to
+    opacity: 1

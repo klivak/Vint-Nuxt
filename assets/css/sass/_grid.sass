@@ -1,0 +1,31 @@
+.container
+  width: 100%
+  max-width: 128rem
+  margin: 0 auto
+  padding: 0 6rem
+  @media (max-width: 767px)
+    padding: 0 1.5rem
+
+  &-row
+    display: flex
+    flex-wrap: wrap
+
+  .column
+    position: relative
+    &-padding_small
+      padding: 5rem 0 10rem 0
+      @media (max-width: 767px)
+        padding: 2.5rem 0 5rem 0
+    &-padding_big
+      padding: 10rem 0
+      @media (max-width: 767px)
+        padding: 5rem 0
+
+  .column-6
+    flex: 0 0 50%
+    @media (max-width: 767px)
+      flex: 0 0 100%
+
+  .column-12
+    width: 100%
+

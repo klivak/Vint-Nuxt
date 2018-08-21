@@ -1,0 +1,55 @@
+.section_form
+
+  .column-form
+    padding-right: 4rem
+    @media (max-width: 767px)
+      padding-right: 0
+
+  .form-text
+    color: #000000
+    font-size: 18px
+    font-weight: 300
+    line-height: 34px
+    padding-top: 7.5rem
+    @media (max-width: 767px)
+      padding-top: 0
+
+  .form-group
+    position: relative
+    margin-bottom: 2rem
+    &:last-child
+      margin-bottom: 0
+
+    &_checkbox
+      .form-field
+        width: auto
+      .label
+        padding-top: 0
+        padding-left: 3.5rem
+      .help
+        display: block
+        margin-top: 1rem
+
+  .form-field
+    padding: .5rem 0 2rem 10rem
+    width: 100%
+    @media (max-width: 767px)
+      padding: .5rem 0 2rem 6rem
+
+    &:active,
+    &:focus
+      color: #fff
+      border-bottom: 1px solid #fff
+
+    &:focus ~ label
+      color: #fff
+
+
+  .label
+    position: absolute
+    top: 0
+    left: 0
+
+  .btn_send
+    margin-top: 2rem
+
